@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styleadminpanel.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h2>Admin Panel</h2>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+      <li><a href="#"><i class="fas fa-users"></i> Users</a></li>
+      <li><a href="#"><i class="fas fa-box"></i> Orders</a></li>
+      <li><a href="#"><i class="fas fa-cogs"></i> Products</a></li>
+      <li><a href="#"><i class="fas fa-chart-line"></i> Analytics</a></li>
+      <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <!-- Top Bar -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <span>Welcome back, Shreeya Shrestha</span>
+      </div>
+      <div class="topbar-right">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button class="filter-btn"><i class="fas fa-filter"></i> Filter</button>
+        <button class="export-btn"><i class="fas fa-download"></i> Export</button>
+        <i class="fas fa-bell notification-icon"></i>
+        <div class="profile">
+          <i class="fas fa-user profile-icon"></i>
+          <span>Profile</span>
+        </div>
+        <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+      <h1>Dashboard</h1>
+      <div class="cards">
+        <div class="card">
+          <h2>Total Customers</h2>
+          <p>102890</p>
+          <p1>+45%</p1>
+        </div>
+        <div class="card">
+          <h2>Total Revenue</h2>
+          <p>256562</p>
+          <p1>+25%</p1>
+        </div>
+        <div class="card">
+          <h2>Convversion ratio</h2>
+          <p>12.03%</p>
+          <p1>-5%</p1>
+        </div>
+      
+
+        
+        </div>
+      </div>
+      <!-- Target Progress Box -->
+      <div class="target-progress-box">
+        <h2>Your target is incomplete</h2>
+        <p>Your target is <strong>40% complete</strong>. To complete your target, follow these steps:</p>
+        <ul>
+          <li>Increase user engagement</li>
+          <li>Track order progress</li>
+          <li>Optimize product listings</li>
+        </ul>
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+        </div>
+         <!-- Statistics Section -->
+    <div class="statistics-section">
+        <h2>Website Statistics</h2>
+        <div class="statistics-cards">
+          <div class="stat-card">
+            <h3>Total Visits</h3>
+            <p>12,345</p>
+          </div>
+          <div class="stat-card">
+            <h3>Sales</h3>
+            <p>$45,678</p>
+          </div>
+          <div class="stat-card">
+            <h3>New Users</h3>
+            <p>567</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>

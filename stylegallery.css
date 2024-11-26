@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6200;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-image: url(bg.jpg);
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    color: white;
+    height: 50vh; /* Sets the height to 70% of the viewport height */
+    display: flex; /* Ensures content stays vertically aligned */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.hero .search-bar {
+    margin-top: 1rem;
+    display: flex;
+    height: 7vh;
+  
+    justify-content: center;
+}
+
+.hero .search-bar input {
+    width: 600px;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.hero .search-bar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    width: 150px;
+    background: #ff6200;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.hero .search-bar button:hover {
+    background: #e55d00;
+}
+
+.gallery {
+    padding: 2rem;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
+    gap: 1rem;
+
+    
+    
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+
+.photo-item img:hover {
+    transform: scale(1.05);
+}
+.photo-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center the image and button */
+    text-align: center;     /* Center the text */
+    padding: 10px;          /* Add some spacing around each item */
+}
+
+.photo-item img {
+    width: 100%;            /* Ensure the image scales properly */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05); /* Slight hover effect on images */
+}
+
+.photo-btn {
+    margin-top: 10px;       /* Space between image and button */
+    padding: 10px 20px;      /* Compact button size */
+    background-color: #ff6200;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: fit-content;     /* Button adjusts to content size */
+}
+
+.photo-btn:hover {
+    background-color: #e55d00;
+    transform: scale(1.1);  /* Slight hover effect on buttons */
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: white;
+}
